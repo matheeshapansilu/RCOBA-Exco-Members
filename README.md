@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="public/logo.png" alt="Richmond College Logo" width="120" />
+  <img src="public/logo.jpg" alt="Richmond College Logo" width="120" />
 
   <h1>Richmond College OBA - Exco Members</h1>
   
