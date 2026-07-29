@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/07/Richmond_College_Galle_crest.svg/1200px-Richmond_College_Galle_crest.svg.png" alt="Richmond College Logo" width="120" />
+  <img src="public/logo.jpg" alt="Richmond College Logo" width="120" />
 
   <h1>Richmond College OBA - Exco Members</h1>
   
