@@ -176,9 +176,10 @@ export default function DirectoryClient({ initialMembers, isAdmin = false }: { i
       {isAdmin && (
         <div className="admin-controls animate-fade-in" style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '20px', gap: '12px' }}>
           <button 
-            onClick={() => {
-              localStorage.removeItem('admin-auth');
-              setIsAdmin(false);
+            onClick={async () => {
+              const { supabase } = await import('@/src/lib/supabase');
+              await supabase.auth.signOut();
+              router.refresh();
             }}
             style={{ padding: '12px 24px', background: 'var(--color-maroon)', color: 'white', borderRadius: '8px', fontWeight: 'bold', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '8px' }}
           >
