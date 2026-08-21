@@ -15,20 +15,6 @@
   --header-bg: rgba(255, 255, 255, 0.85);
 }
 
-[data-theme='dark'] {
-  --color-maroon: #8A1C37;
-  --color-maroon-light: #A52A4A;
-  --color-lightblue: #1e293b;
-  --color-lightblue-dark: #334155;
-  --color-bg: #0f172a;
-  --color-text: #f8fafc;
-  --color-text-light: #94a3b8;
-  --glass-bg: rgba(30, 41, 59, 0.7);
-  --glass-border: rgba(255, 255, 255, 0.1);
-  --card-bg: #1e293b;
-  --input-bg: #1e293b;
-  --header-bg: rgba(15, 23, 42, 0.85);
-}
 
 * {
   box-sizing: border-box;
