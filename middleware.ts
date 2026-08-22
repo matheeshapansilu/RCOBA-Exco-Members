@@ -28,7 +28,8 @@ export const config = {
      * - _next/image (image optimization files)
      * - favicon.ico (favicon file)
      * - logo.jpg, logo2.png, members.csv (public files)
+     * - ads.txt (AdSense verification)
      */
-    '/((?!api|_next/static|_next/image|favicon.ico|logo.jpg|logo2.png|members.csv).*)',
+    '/((?!api|_next/static|_next/image|favicon.ico|logo.jpg|logo2.png|members.csv|ads.txt).*)',
   ],
 };
