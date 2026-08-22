@@ -6,6 +6,7 @@ import { Member } from '../data/members';
 import MemberCard from './MemberCard';
 import DashboardCharts from './DashboardCharts';
 import MemberModal from './MemberModal';
+import BannerAd from './BannerAd';
 import { useRouter } from 'next/navigation';
 import { deleteMember } from '@/app/admin/actions';
 
@@ -199,6 +200,9 @@ export default function DirectoryClient({ initialMembers, isAdmin = false }: { i
         </div>
       )}
       
+      {/* Banner Ad Section */}
+      <BannerAd />
+
       {/* Dashboard Section */}
       <div className="dashboard-grid animate-fade-in">
         <div 
