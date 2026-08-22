@@ -519,8 +519,8 @@ input, textarea {
   user-select: auto;
 }
 
-/* Banner Ad Utilities */
-.banner-ad-container {
+/* Sponsorship Utilities */
+.sponsorship-box-container {
   max-width: 1200px;
   margin: 0 auto 2rem auto;
   border-radius: 20px;
@@ -529,7 +529,7 @@ input, textarea {
   border: 1px solid var(--color-lightblue-dark);
 }
 
-.banner-content {
+.sponsorship-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -537,7 +537,7 @@ input, textarea {
   background: linear-gradient(135deg, rgba(108, 21, 43, 0.05) 0%, rgba(215, 239, 246, 0.3) 100%);
 }
 
-.banner-text {
+.sponsorship-text {
   flex: 1;
 }
 
@@ -554,21 +554,21 @@ input, textarea {
   letter-spacing: 0.05em;
 }
 
-.banner-text h3 {
+.sponsorship-text h3 {
   font-size: 1.5rem;
   color: var(--color-maroon);
   margin-bottom: 0.5rem;
   font-weight: 700;
 }
 
-.banner-text p {
+.sponsorship-text p {
   color: var(--color-text-light);
   font-size: 1.05rem;
   max-width: 600px;
   line-height: 1.5;
 }
 
-.banner-cta {
+.sponsorship-cta {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -584,7 +584,7 @@ input, textarea {
   white-space: nowrap;
 }
 
-.banner-cta:hover {
+.sponsorship-cta:hover {
   background: var(--color-maroon);
   color: white;
   transform: translateY(-2px);
@@ -592,15 +592,15 @@ input, textarea {
 }
 
 @media (max-width: 768px) {
-  .banner-content {
+  .sponsorship-content {
     flex-direction: column;
     text-align: center;
     padding: 1.5rem;
   }
-  .banner-text p {
+  .sponsorship-text p {
     margin: 0 auto 1.5rem auto;
   }
-  .banner-cta {
+  .sponsorship-cta {
     margin-left: 0;
     width: 100%;
     justify-content: center;
