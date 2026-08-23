@@ -11,8 +11,9 @@ export function middleware(request: NextRequest) {
   const isAuthenticated = request.cookies.has('rcoba_auth_v3');
 
   if (!isAuthenticated) {
+    // TEMPORARILY DISABLED FOR GOOGLE ADSENSE APPROVAL
     // Redirect to the login page if not authenticated
-    return NextResponse.redirect(new URL('/login', request.url));
+    // return NextResponse.redirect(new URL('/login', request.url));
   }
 
   return NextResponse.next();
