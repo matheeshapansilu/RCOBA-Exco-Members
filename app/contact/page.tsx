@@ -61,9 +61,10 @@ export default function ContactPage() {
               <div>
                 <div style={{ fontWeight: 600, color: 'var(--color-navy)', fontSize: '1.1rem', marginBottom: '4px' }}>Address</div>
                 <div style={{ color: '#64748b', lineHeight: 1.5 }}>
+                  Dr. CWW Kannangara Auditorium,<br/>
                   Richmond College,<br/>
-                  Richmond Hill Rd,<br/>
-                  Galle 80000<br/>
+                  Galle.<br/>
+                  80000<br/>
                   Sri Lanka
                 </div>
               </div>

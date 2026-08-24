@@ -86,7 +86,7 @@ export default function RootLayout({
                 <div className="footer-contact">
                   <div className="footer-contact-item">
                     <div className="footer-contact-icon"><MapPin size={18} /></div>
-                    <div>Richmond College,<br/>Richmond Hill Rd,<br/>Galle 80000<br/>Sri Lanka</div>
+                    <div>Dr. C W W Kannangara Auditorium,<br/>Richmond College,<br/>Galle,<br/>80000<br/>Sri Lanka</div>
                   </div>
                   <div className="footer-contact-item">
                     <div className="footer-contact-icon"><Phone size={18} /></div>
