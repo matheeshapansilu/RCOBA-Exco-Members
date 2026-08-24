@@ -5,8 +5,17 @@ import { Analytics } from '@vercel/analytics/react'
 import { MapPin, Phone, Mail, Facebook, Instagram, Linkedin } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'RCOBA Exco Members (1976 - 2026)',
-  description: "Richmond College Old Boys' Association - Members Directory",
+  title: 'RCOBA Exco Members Directory',
+  description: "Official Richmond College Old Boys' Association (RCOBA) Exco Members Directory from 1976 to 2026. Explore alumni, leadership, and our rich history in Galle, Sri Lanka.",
+  keywords: ['RCOBA', 'Richmond College', 'Old Boys Association', 'Galle', 'Sri Lanka', 'Alumni', 'Exco Members', 'Directory'],
+  openGraph: {
+    title: 'RCOBA Exco Members Directory',
+    description: "Official Richmond College Old Boys' Association (RCOBA) Exco Members Directory.",
+    type: 'website',
+    locale: 'en_LK',
+    url: 'https://rcoba-web.vercel.app',
+    siteName: 'RCOBA'
+  }
 }
 
 export default function RootLayout({
