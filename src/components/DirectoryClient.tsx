@@ -174,6 +174,13 @@ export default function DirectoryClient({ initialMembers, isAdmin = false }: { i
 
   return (
     <main className="main-content container">
+      <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center', gap: '20px', marginBottom: '40px', background: 'white', padding: '20px', borderRadius: '16px', boxShadow: '0 4px 6px rgba(0,0,0,0.05)' }}>
+        <img src="/logo.jpg" alt="RCOBA Logo" style={{ height: '80px', width: 'auto' }} />
+        <h1 style={{ color: 'var(--color-navy)', fontSize: '2rem', fontWeight: 800, textAlign: 'center', margin: 0 }}>
+          RCOBA Exco Members (1976 - 2026)
+        </h1>
+        <img src="/logo2.png" alt="RCOBA 150 Years Logo" style={{ height: '80px', width: 'auto' }} />
+      </div>
       {isAdmin && (
         <div className="admin-controls animate-fade-in" style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '20px', gap: '12px' }}>
           <button 
