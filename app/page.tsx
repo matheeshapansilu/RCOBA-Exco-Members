@@ -19,7 +19,8 @@ export default async function Home() {
       address,
       occupation,
       positions ( year, title )
-    `);
+    `)
+    .order('id', { ascending: true });
 
   if (error) {
     console.error("Failed to fetch members from Supabase", error);
