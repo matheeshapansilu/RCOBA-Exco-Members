@@ -48,7 +48,7 @@ export default function RootLayout({
               <a href="/">Home</a>
               <a href="#">Shop</a>
               <a href="/about">About Us</a>
-              <a href="#">Gallery</a>
+              <a href="/news">News</a>
               <a href="/contact" className="btn-contact">Contact</a>
             </nav>
           </header>
@@ -84,7 +84,7 @@ export default function RootLayout({
                   <a href="/">Home</a>
                   <a href="#">Shop</a>
                   <a href="/about">About Us</a>
-                  <a href="#">Gallery</a>
+                  <a href="/news">News & Updates</a>
                   <a href="/contact">Contact</a>
                 </div>
               </div>
