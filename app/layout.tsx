@@ -112,7 +112,7 @@ export default function RootLayout({
               <div>
                 <h3 className="footer-heading">Follow Us</h3>
                 <div className="footer-social">
-                  <a href="#"><Facebook size={24} /></a>
+                  <a href="https://www.facebook.com/share/1CQqVDtRPm/" target="_blank" rel="noopener noreferrer"><Facebook size={24} /></a>
                   <a href="#"><Instagram size={24} /></a>
                   <a href="#"><Linkedin size={24} /></a>
                 </div>
