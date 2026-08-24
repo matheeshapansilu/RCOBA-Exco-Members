@@ -21,9 +21,12 @@ export default function AboutPage() {
         are never forgotten, while providing a seamless way for current members to connect, collaborate, and continue 
         serving Richmond College.
       </p>
-      <p style={{ lineHeight: '1.6', marginTop: '30px', fontSize: '16px', fontWeight: 'bold' }}>
-        Nisi Dominus Frustra.
-      </p>
+      <div style={{ textAlign: 'center', marginTop: '40px' }}>
+        <img src="/logo.jpg" alt="Richmond College Logo" style={{ width: '100px', height: 'auto', marginBottom: '16px' }} />
+        <p style={{ lineHeight: '1.6', fontSize: '18px', fontWeight: 'bold', fontStyle: 'italic', color: 'var(--color-maroon)' }}>
+          Nisi Dominus Frustra.
+        </p>
+      </div>
     </main>
   );
 }
