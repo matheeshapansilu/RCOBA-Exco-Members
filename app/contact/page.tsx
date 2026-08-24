@@ -90,7 +90,7 @@ export default function ContactPage() {
             <div style={{ display: 'flex', gap: '16px' }}>
               <a href="https://www.facebook.com/share/1CQqVDtRPm/" target="_blank" rel="noopener noreferrer" style={{ background: '#3b5998', color: 'white', padding: '12px', borderRadius: '50%', display: 'flex' }}><Facebook size={20} /></a>
               <a href="https://www.instagram.com/richmondcollege?igsi=MTQ1NXJsM3JmeHl1NQ==" target="_blank" rel="noopener noreferrer" style={{ background: '#e1306c', color: 'white', padding: '12px', borderRadius: '50%', display: 'flex' }}><Instagram size={20} /></a>
-              <a href="#" style={{ background: '#0077b5', color: 'white', padding: '12px', borderRadius: '50%', display: 'flex' }}><Linkedin size={20} /></a>
+              <a href="https://www.linkedin.com/school/richmondcollege/" target="_blank" rel="noopener noreferrer" style={{ background: '#0077b5', color: 'white', padding: '12px', borderRadius: '50%', display: 'flex' }}><Linkedin size={20} /></a>
             </div>
           </div>
 

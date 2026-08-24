@@ -114,7 +114,7 @@ export default function RootLayout({
                 <div className="footer-social">
                   <a href="https://www.facebook.com/share/1CQqVDtRPm/" target="_blank" rel="noopener noreferrer"><Facebook size={24} /></a>
                   <a href="https://www.instagram.com/richmondcollege?igsi=MTQ1NXJsM3JmeHl1NQ==" target="_blank" rel="noopener noreferrer"><Instagram size={24} /></a>
-                  <a href="#"><Linkedin size={24} /></a>
+                  <a href="https://www.linkedin.com/school/richmondcollege/" target="_blank" rel="noopener noreferrer"><Linkedin size={24} /></a>
                 </div>
               </div>
 
