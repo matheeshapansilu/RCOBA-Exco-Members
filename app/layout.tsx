@@ -34,6 +34,14 @@ export default function RootLayout({
             </div>
           </header>
           {children}
+          <footer style={{ textAlign: 'center', padding: '40px 20px', marginTop: '40px', borderTop: '1px solid #e2e8f0', color: '#64748b' }}>
+            <div style={{ display: 'flex', justifyContent: 'center', gap: '24px', marginBottom: '16px' }}>
+              <a href="/" style={{ color: 'var(--color-maroon)', textDecoration: 'none', fontWeight: '500' }}>Home</a>
+              <a href="/about" style={{ color: 'var(--color-maroon)', textDecoration: 'none', fontWeight: '500' }}>About Us</a>
+              <a href="/contact" style={{ color: 'var(--color-maroon)', textDecoration: 'none', fontWeight: '500' }}>Contact Us</a>
+            </div>
+            <p>© {new Date().getFullYear()} Richmond College Old Boys' Association. All rights reserved.</p>
+          </footer>
         </SecurityWrapper>
         <Analytics />
       </body>
