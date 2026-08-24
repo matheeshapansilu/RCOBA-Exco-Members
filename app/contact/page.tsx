@@ -172,7 +172,7 @@ export default function ContactPage() {
         
         <div style={{ width: '100%', height: '400px', background: '#e2e8f0' }}>
           <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.653630252655!2d80.20573931476839!3d6.042211995625445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae173a149f12abf%3A0x6b8bc8748722a27b!2sRichmond%20College%2C%20Galle!5e0!3m2!1sen!2slk!4v1684300481234!5m2!1sen!2slk" 
+            src="https://maps.google.com/maps?q=6.052398167254285,80.20432535652021&hl=en&z=15&output=embed" 
             width="100%" 
             height="100%" 
             style={{ border: 0 }} 
