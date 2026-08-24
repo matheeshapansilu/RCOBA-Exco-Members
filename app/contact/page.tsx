@@ -61,10 +61,9 @@ export default function ContactPage() {
               <div>
                 <div style={{ fontWeight: 600, color: 'var(--color-navy)', fontSize: '1.1rem', marginBottom: '4px' }}>Address</div>
                 <div style={{ color: '#64748b', lineHeight: 1.5 }}>
-                  Dr. CWW Kannangara Auditorium,<br/>
                   Richmond College,<br/>
-                  Galle.<br/>
-                  80000<br/>
+                  Richmond Hill Rd,<br/>
+                  Galle 80000<br/>
                   Sri Lanka
                 </div>
               </div>
@@ -185,7 +184,7 @@ export default function ContactPage() {
         <div style={{ padding: '20px 40px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'white', color: 'var(--color-text)' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
             <div style={{ width: '4px', height: '24px', background: '#0ea5e9', borderRadius: '2px' }}></div>
-            <span style={{ fontSize: '1.1rem', color: '#64748b' }}>3624+W7J, Road, Galle 80000</span>
+            <span style={{ fontSize: '1.1rem', color: '#64748b' }}>Richmond College, Richmond Hill Rd, Galle 80000</span>
           </div>
           <a href="https://maps.google.com/?q=Richmond+College+Galle" target="_blank" rel="noreferrer" style={{ background: 'var(--color-navy)', color: 'white', padding: '10px 20px', borderRadius: '8px', textDecoration: 'none', fontWeight: 600, display: 'inline-block' }}>
             Get Directions ?
