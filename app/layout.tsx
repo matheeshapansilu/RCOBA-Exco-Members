@@ -121,7 +121,7 @@ export default function RootLayout({
             </div>
             
             <div className="footer-bottom">
-              2026 � Richmond College Old Boys' Association | All Rights Reserved
+              &copy; 2026 Richmond College Old Boys' Association | All Rights Reserved
             </div>
           </footer>
 
