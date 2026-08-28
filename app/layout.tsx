@@ -46,7 +46,7 @@ export default function RootLayout({
             </div>
             <nav className="header-nav">
               <a href="/">Home</a>
-              <a href="#">Shop</a>
+              <a href="/shop">Shop</a>
               <a href="/about">About Us</a>
               <a href="/news">News</a>
               <a href="/contact" className="btn-contact">Contact</a>
@@ -82,7 +82,7 @@ export default function RootLayout({
                 <h3 className="footer-heading">Quick Links</h3>
                 <div className="footer-links">
                   <a href="/">Home</a>
-                  <a href="#">Shop</a>
+                  <a href="/shop">Shop</a>
                   <a href="/about">About Us</a>
                   <a href="/news">News & Updates</a>
                   <a href="/contact">Contact</a>
