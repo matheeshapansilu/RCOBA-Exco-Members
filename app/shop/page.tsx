@@ -294,6 +294,92 @@ export default function ShopPage() {
         </div>
       </section>
 
+      {/* Newsletter Section */}
+      <section id="contact_form" style={{ 
+        padding: '80px 20px', 
+        textAlign: 'center',
+        background: '#ffffff',
+        borderTop: '1px solid #eaeaea'
+      }}>
+        <div className="container" style={{ maxWidth: '600px', margin: '0 auto' }}>
+          <h2 style={{ 
+            fontSize: '2rem', 
+            fontWeight: 800, 
+            color: 'var(--color-navy)',
+            marginBottom: '16px'
+          }}>
+            Get Product Updates....
+          </h2>
+          <p style={{ 
+            fontSize: '1rem', 
+            color: '#4a4a4a', 
+            marginBottom: '32px',
+            lineHeight: 1.6
+          }}>
+            Be the first to know about new collections and special offers.
+          </p>
+          
+          <form 
+            style={{ 
+              display: 'flex', 
+              gap: '12px',
+              maxWidth: '480px',
+              margin: '0 auto'
+            }}
+            onSubmit={(e) => {
+              e.preventDefault();
+              window.location.href = '?customer_posted=true#contact_form';
+            }}
+          >
+            <input 
+              type="email" 
+              placeholder="Email address" 
+              required
+              style={{
+                flex: 1,
+                padding: '12px 20px',
+                borderRadius: '50px',
+                border: '1px solid #ccc',
+                fontSize: '1rem',
+                outline: 'none',
+                boxShadow: 'inset 0 1px 3px rgba(0,0,0,0.05)'
+              }}
+            />
+            <button 
+              type="submit"
+              style={{
+                background: 'var(--color-maroon)',
+                color: 'white',
+                border: 'none',
+                borderRadius: '50px',
+                padding: '12px 32px',
+                fontSize: '1rem',
+                fontWeight: 600,
+                cursor: 'pointer',
+                transition: 'background 0.2s ease'
+              }}
+              onMouseOver={(e) => e.currentTarget.style.background = '#6b1111'}
+              onMouseOut={(e) => e.currentTarget.style.background = 'var(--color-maroon)'}
+            >
+              Subscribe
+            </button>
+          </form>
+
+          {typeof window !== 'undefined' && window.location.search.includes('customer_posted=true') && (
+            <div style={{ 
+              marginTop: '20px', 
+              padding: '12px', 
+              background: '#e6f4ea', 
+              color: '#137333', 
+              borderRadius: '8px',
+              fontWeight: 500
+            }}>
+              Thanks for subscribing! We'll keep you updated.
+            </div>
+          )}
+        </div>
+      </section>
+
       {/* School Building Footer Image */}
       <section style={{ width: '100%', display: 'flex' }}>
         <img 
