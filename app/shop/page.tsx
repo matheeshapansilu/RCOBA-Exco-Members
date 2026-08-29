@@ -74,6 +74,35 @@ export default function ShopPage() {
 
       <div style={{ maxWidth: '1400px', margin: '0 auto', padding: '60px 4%' }}>
         
+        {/* 150th Anniversary Video */}
+        <section style={{ marginBottom: '80px' }}>
+          <div style={{ position: 'relative', width: '100%', overflow: 'hidden', background: '#000' }}>
+            <video 
+              controls 
+              style={{ width: '100%', height: 'auto', display: 'block', maxHeight: '80vh', objectFit: 'contain' }}
+            >
+              <source src="/videos/150-anniversary.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div style={{ 
+            display: 'flex', 
+            justifyContent: 'space-between', 
+            alignItems: 'center', 
+            marginTop: '20px',
+            flexWrap: 'wrap',
+            gap: '16px',
+            padding: '0 8px'
+          }}>
+            <p style={{ color: '#4a4a4a', fontSize: '1rem', margin: 0, fontFamily: 'Inter, sans-serif' }}>
+              150 years of greatness, one legacy of faith and excellence
+            </p>
+            <a href="/shop" style={{ color: '#4a4a4a', fontSize: '0.95rem', textDecoration: 'none', fontFamily: 'Inter, sans-serif' }}>
+              Buy 150 Anniversary Collection
+            </a>
+          </div>
+        </section>
+
         {/* Handpicked Favorites */}
         <section style={{ marginBottom: '100px' }}>
           <h2 style={{ 

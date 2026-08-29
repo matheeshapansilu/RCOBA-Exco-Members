@@ -75,6 +75,35 @@ export default async function NewsPage() {
   return (
     <main className="main-content container" style={{ padding: '60px 20px', maxWidth: '1200px', margin: '0 auto' }}>
       
+      {/* 150th Anniversary Featured Video */}
+      <section style={{ marginBottom: '80px' }}>
+        <div style={{ position: 'relative', width: '100%', overflow: 'hidden', background: '#000', borderRadius: '16px', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}>
+          <video 
+            controls 
+            style={{ width: '100%', height: 'auto', display: 'block', maxHeight: '70vh', objectFit: 'contain' }}
+          >
+            <source src="/videos/150-anniversary.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div style={{ 
+          display: 'flex', 
+          justifyContent: 'space-between', 
+          alignItems: 'center', 
+          marginTop: '20px',
+          flexWrap: 'wrap',
+          gap: '16px',
+          padding: '0 8px'
+        }}>
+          <p style={{ color: '#4a4a4a', fontSize: '1rem', margin: 0, fontFamily: 'Inter, sans-serif' }}>
+            150 years of greatness, one legacy of faith and excellence
+          </p>
+          <a href="/shop" style={{ color: 'var(--color-navy)', fontWeight: 600, fontSize: '0.95rem', textDecoration: 'none', fontFamily: 'Inter, sans-serif' }}>
+            Buy 150 Anniversary Collection &rarr;
+          </a>
+        </div>
+      </section>
+
       {/* Official Upcoming News Section */}
       <div style={{ textAlign: 'center', marginBottom: '40px' }}>
         <h1 style={{ color: 'var(--color-navy)', fontSize: '2.5rem', fontWeight: 800, marginBottom: '12px' }}>
