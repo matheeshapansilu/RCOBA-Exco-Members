@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import React, { useRef, useState, useEffect } from 'react';
 
@@ -9,6 +9,10 @@ export default function CustomVideoPlayer({ src, posterTime = 14.5 }: { src: str
 
   const handlePlayClick = () => {
     if (videoRef.current) {
+      if (!hasInteracted) {
+        // Reset to beginning only on the very first interaction
+        videoRef.current.currentTime = 0;
+      }
       videoRef.current.play();
       videoRef.current.controls = true;
       setIsPlaying(true);
