@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { ShoppingCart, ChevronLeft, ChevronRight, Shirt, Star, Heart, ArrowRight, Check } from 'lucide-react';
+import CustomVideoPlayer from '../components/CustomVideoPlayer';
 
 export default function ShopPage() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -77,13 +78,7 @@ export default function ShopPage() {
         {/* 150th Anniversary Video */}
         <section style={{ marginBottom: '80px' }}>
           <div style={{ position: 'relative', width: '100%', overflow: 'hidden', background: '#000' }}>
-            <video 
-              controls 
-              style={{ width: '100%', height: 'auto', display: 'block', maxHeight: '80vh', objectFit: 'contain' }}
-            >
-              <source src="/videos/150-anniversary.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            <CustomVideoPlayer src="/videos/150-anniversary.mp4" posterTime={14.5} />
           </div>
           <div style={{ 
             display: 'flex', 

@@ -2,6 +2,7 @@ import React from 'react';
 import { Bell, Calendar, ChevronRight, Image as ImageIcon, Video, FileText } from 'lucide-react';
 import { Metadata } from 'next';
 import NewsGrid from './NewsGrid';
+import CustomVideoPlayer from '../components/CustomVideoPlayer';
 
 export const metadata: Metadata = {
   title: 'News & Updates | RCOBA',
@@ -78,13 +79,7 @@ export default async function NewsPage() {
       {/* 150th Anniversary Featured Video */}
       <section style={{ marginBottom: '80px' }}>
         <div style={{ position: 'relative', width: '100%', overflow: 'hidden', background: '#000', borderRadius: '16px', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}>
-          <video 
-            controls 
-            style={{ width: '100%', height: 'auto', display: 'block', maxHeight: '70vh', objectFit: 'contain' }}
-          >
-            <source src="/videos/150-anniversary.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+          <CustomVideoPlayer src="/videos/150-anniversary.mp4" posterTime={14.5} />
         </div>
         <div style={{ 
           display: 'flex', 
