@@ -3,8 +3,10 @@ import type { Metadata } from 'next'
 import SecurityWrapper from '@/src/components/SecurityWrapper'
 import { Analytics } from '@vercel/analytics/react'
 import { MapPin, Phone, Mail, Facebook, Instagram, Linkedin } from 'lucide-react'
+import Header from './Header'
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://rcoba-web.vercel.app'),
   title: 'RCOBA Exco Members Directory',
   description: "Official Richmond College Old Boys' Association (RCOBA) Exco Members Directory from 1976 to 2026. Explore alumni, leadership, and our rich history in Galle, Sri Lanka.",
   keywords: ['RCOBA', 'Richmond College', 'Old Boys Association', 'Galle', 'Sri Lanka', 'Alumni', 'Exco Members', 'Directory'],
@@ -35,23 +37,8 @@ export default function RootLayout({
       <body>
         <SecurityWrapper>
           
-          {/* Official Header */}
-          <header className="official-header">
-            <div className="header-brand">
-              <img src="/logo.jpg" alt="RCOBA Logo" />
-              <div style={{ lineHeight: 1.1 }}>
-                <div style={{ fontSize: '1.2rem', fontWeight: 700 }}>RCOBA</div>
-                <div style={{ fontSize: '0.7rem', opacity: 0.9 }}>RICHMOND COLLEGE OLD BOYS' ASSOCIATION</div>
-              </div>
-            </div>
-            <nav className="header-nav">
-              <a href="/">Home</a>
-              <a href="/shop">Shop</a>
-              <a href="/about">About Us</a>
-              <a href="/news">News</a>
-              <a href="/contact" className="btn-contact">Contact</a>
-            </nav>
-          </header>
+          {/* Shop Header */}
+          <Header />
 
           {children}
 

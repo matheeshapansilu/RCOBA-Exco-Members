@@ -194,9 +194,81 @@ body {
   line-height: 1.2;
 }
 
-.date-value {
-  font-size: 1rem;
-  margin-top: 0.25rem;
+
+/* Shop Layout Utilities */
+.shop-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 1024px) {
+  .shop-grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .shop-grid-4 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.shop-split-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 900px) {
+  .shop-split-section {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Product Hover Utilities */
+.product-image-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background-color: #ffffff;
+}
+
+.product-image-container:hover .product-image-hover {
+  opacity: 1;
+}
+
+.contact-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 600px) {
+  .contact-form-row {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Search Bar & Filters */
