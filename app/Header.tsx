@@ -29,41 +29,70 @@ export default function Header() {
 
   return (
     <>
-      {/* Official Header */}
-      <header className="official-header">
-        <div className="header-brand">
-          <img src="/logo.jpg" alt="RCOBA Logo" />
-          <div style={{ lineHeight: 1.1 }}>
-            <div style={{ fontSize: '1.2rem', fontWeight: 700 }}>RCOBA</div>
-            <div style={{ fontSize: '0.7rem', opacity: 0.9 }}>RICHMOND COLLEGE OLD BOYS' ASSOCIATION</div>
+      {/* Conditional Header Rendering */}
+      {isShopRoute ? (
+        <header style={{ 
+          display: 'flex', 
+          justifyContent: 'space-between', 
+          alignItems: 'center', 
+          padding: '1.25rem 4%', 
+          background: '#ffffff',
+          borderBottom: '1px solid #eaeaea',
+          position: 'sticky',
+          top: 0,
+          zIndex: 100
+        }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '32px' }}>
+            <a href="/" style={{ display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none' }}>
+              <img src="/images/shop/rcoba-logo_1.png" alt="RCOBA Logo" style={{ height: '48px', objectFit: 'contain' }} />
+              <div style={{ display: 'flex', flexDirection: 'column' }}>
+                <span style={{ fontSize: '1.25rem', fontWeight: 800, color: '#1a202c', lineHeight: 1.1, letterSpacing: '0.5px' }}>RCOBA</span>
+                <span style={{ fontSize: '0.65rem', fontWeight: 600, color: '#4a5568', letterSpacing: '0.2px' }}>RICHMOND COLLEGE<br/>OLD BOYS' ASSOCIATION</span>
+              </div>
+            </a>
+            
+            <nav style={{ display: 'flex', gap: '24px', marginLeft: '24px' }}>
+              <a href="/" style={{ textDecoration: 'none', color: '#4a5568', fontSize: '0.95rem', fontWeight: 500, transition: 'color 0.2s' }}>Home</a>
+              <a href="/shop" style={{ textDecoration: 'none', color: '#4a5568', fontSize: '0.95rem', fontWeight: 500, transition: 'color 0.2s' }}>Shop</a>
+              <a href="/collections/150th-anniversary-merch" style={{ textDecoration: 'none', color: '#4a5568', fontSize: '0.95rem', fontWeight: 500, transition: 'color 0.2s' }}>150th Anniversary Merch</a>
+              <a href="/contact" style={{ textDecoration: 'none', color: '#4a5568', fontSize: '0.95rem', fontWeight: 500, transition: 'color 0.2s' }}>Contact Us</a>
+            </nav>
           </div>
-        </div>
-        <nav className="header-nav">
-          <a href="/">Home</a>
-          <a href="/shop">Shop</a>
-          <a href="/about">About Us</a>
-          <a href="/news">News</a>
-          <a href="/contact" className="btn-contact">Contact</a>
           
-          {isShopRoute && (
-            <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginLeft: '16px' }}>
-              <button 
-                onClick={() => setIsSearchOpen(true)}
-                style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'white', display: 'flex' }}
-                aria-label="Search"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-              </button>
-              <button style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'white', display: 'flex' }}>
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-              </button>
-              <button style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'white', display: 'flex' }}>
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
-              </button>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
+            <button 
+              onClick={() => setIsSearchOpen(true)}
+              style={{ background: 'none', border: 'none', cursor: 'pointer', color: '#4a5568' }}
+              aria-label="Search"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </button>
+            <button style={{ background: 'none', border: 'none', cursor: 'pointer', color: '#4a5568' }}>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            </button>
+            <button style={{ background: 'none', border: 'none', cursor: 'pointer', color: '#4a5568' }}>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+            </button>
+          </div>
+        </header>
+      ) : (
+        <header className="official-header">
+          <div className="header-brand">
+            <img src="/logo.jpg" alt="RCOBA Logo" />
+            <div style={{ lineHeight: 1.1 }}>
+              <div style={{ fontSize: '1.2rem', fontWeight: 700 }}>RCOBA</div>
+              <div style={{ fontSize: '0.7rem', opacity: 0.9 }}>RICHMOND COLLEGE OLD BOYS' ASSOCIATION</div>
             </div>
-          )}
-        </nav>
-      </header>
+          </div>
+          <nav className="header-nav">
+            <a href="/">Home</a>
+            <a href="/shop">Shop</a>
+            <a href="/about">About Us</a>
+            <a href="/news">News</a>
+            <a href="/contact" className="btn-contact">Contact</a>
+          </nav>
+        </header>
+      )}
 
       {/* Search Modal Overlay */}
       {isSearchOpen && (
