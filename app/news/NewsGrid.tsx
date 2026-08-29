@@ -19,7 +19,7 @@ export default function NewsGrid({ notices }: { notices: any[] }) {
 
   return (
     <>
-      <style dangerouslySetInnerHTML={{__html: 
+      <style dangerouslySetInnerHTML={{__html: `
         .news-img-container {
           position: relative;
           cursor: pointer;
@@ -57,7 +57,7 @@ export default function NewsGrid({ notices }: { notices: any[] }) {
           from { transform: scale(0.95); opacity: 0; }
           to { transform: scale(1); opacity: 1; }
         }
-      }} />
+      `}} />
 
       <div style={{ 
         display: 'grid', 
