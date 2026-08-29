@@ -1,6 +1,7 @@
-﻿import React from 'react';
+import React from 'react';
 import { Bell, Calendar, ChevronRight, Image as ImageIcon, Video, FileText } from 'lucide-react';
 import { Metadata } from 'next';
+import NewsGrid from './NewsGrid';
 
 export const metadata: Metadata = {
   title: 'News & Updates | RCOBA',
@@ -89,49 +90,7 @@ export default async function NewsPage() {
         </div>
       </div>
 
-      <div style={{ 
-        display: 'grid', 
-        gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', 
-        gap: '30px',
-        alignItems: 'start',
-        marginBottom: '80px'
-      }}>
-        {notices.map((notice: any) => (
-          <div key={notice.id} style={{ 
-            background: '#ffffff', 
-            borderRadius: '16px', 
-            overflow: 'hidden', 
-            boxShadow: '0 10px 25px rgba(0,0,0,0.05)',
-            borderTop: '6px solid var(--color-navy)',
-            borderLeft: '6px solid var(--color-navy)',
-            display: 'flex',
-            flexDirection: 'column'
-          }}>
-            <div style={{ padding: '24px' }}>
-              <h2 style={{ 
-                color: 'var(--color-navy)', 
-                fontSize: '1.25rem', 
-                fontWeight: 700,
-                lineHeight: 1.3
-              }}>
-                {notice.title}
-              </h2>
-            </div>
-            <div style={{ width: '100%', flex: 1 }}>
-              <img 
-                src={notice.imageUrl} 
-                alt={notice.title} 
-                style={{ 
-                  width: '100%', 
-                  height: 'auto', 
-                  display: 'block',
-                  objectFit: 'contain' 
-                }} 
-              />
-            </div>
-          </div>
-        ))}
-      </div>
+      <NewsGrid notices={notices} />
 
       {/* Previous General News & Updates Section */}
       <div style={{ borderTop: '1px solid #e2e8f0', paddingTop: '60px' }}>
