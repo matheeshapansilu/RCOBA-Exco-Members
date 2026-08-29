@@ -89,7 +89,7 @@ export default function Header() {
             <a href="/shop">Shop</a>
             <a href="/about">About Us</a>
             <a href="/news">News</a>
-            <a href="/contact" className="btn-contact">Contact</a>
+            <a href="/contact">Contact</a>
           </nav>
         </header>
       )}
