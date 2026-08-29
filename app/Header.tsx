@@ -55,7 +55,7 @@ export default function Header() {
               <a href="/" style={{ textDecoration: 'none', color: '#4a5568', fontSize: '0.95rem', fontWeight: 500, transition: 'color 0.2s' }}>Home</a>
               <a href="/shop" style={{ textDecoration: 'none', color: '#4a5568', fontSize: '0.95rem', fontWeight: 500, transition: 'color 0.2s' }}>Shop</a>
               <a href="/collections/150th-anniversary-merch" style={{ textDecoration: 'none', color: '#4a5568', fontSize: '0.95rem', fontWeight: 500, transition: 'color 0.2s' }}>150th Anniversary Merch</a>
-              <a href="/contact" style={{ textDecoration: 'none', color: '#4a5568', fontSize: '0.95rem', fontWeight: 500, transition: 'color 0.2s' }}>Contact Us</a>
+              <a href="/shop/contact" style={{ textDecoration: 'none', color: '#4a5568', fontSize: '0.95rem', fontWeight: 500, transition: 'color 0.2s' }}>Contact Us</a>
             </nav>
           </div>
           
