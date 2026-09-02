@@ -4,6 +4,7 @@ import SecurityWrapper from '@/src/components/SecurityWrapper'
 import { Analytics } from '@vercel/analytics/react'
 import { MapPin, Phone, Mail, Facebook, Instagram, Linkedin } from 'lucide-react'
 import Header from './Header'
+import CookieConsent from '@/src/components/CookieConsent'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://rcoba-web.vercel.app'),
@@ -73,6 +74,8 @@ export default function RootLayout({
                   <a href="/about">About Us</a>
                   <a href="/news">News & Updates</a>
                   <a href="/contact">Contact</a>
+                  <a href="/privacy">Privacy Policy</a>
+                  <a href="/terms">Terms of Service</a>
                 </div>
               </div>
 
@@ -113,6 +116,7 @@ export default function RootLayout({
           </footer>
 
         </SecurityWrapper>
+        <CookieConsent />
         <Analytics />
       </body>
     </html>
