@@ -174,12 +174,22 @@ export default function DirectoryClient({ initialMembers, isAdmin = false }: { i
 
   return (
     <main className="main-content container">
-      <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center', gap: '20px', marginBottom: '40px', background: 'white', padding: '20px', borderRadius: '16px', boxShadow: '0 4px 6px rgba(0,0,0,0.05)' }}>
+      <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center', gap: '20px', marginBottom: '20px', background: 'white', padding: '20px', borderRadius: '16px', boxShadow: '0 4px 6px rgba(0,0,0,0.05)' }}>
         <img src="/logo.jpg" alt="RCOBA Logo" style={{ height: '80px', width: 'auto' }} />
         <h1 style={{ color: 'var(--color-navy)', fontSize: '2rem', fontWeight: 800, textAlign: 'center', margin: 0 }}>
           RCOBA Exco Members (1976 - 2026)
         </h1>
         <img src="/logo2.png" alt="RCOBA 150 Years Logo" style={{ height: '80px', width: 'auto' }} />
+      </div>
+
+      <div style={{ background: 'white', padding: '24px 32px', borderRadius: '16px', marginBottom: '40px', boxShadow: '0 4px 6px rgba(0,0,0,0.05)' }}>
+        <h2 style={{ color: 'var(--color-navy)', fontSize: '1.4rem', fontWeight: 700, marginBottom: '12px' }}>Welcome to the Official Directory</h2>
+        <p style={{ color: '#475569', fontSize: '1.05rem', lineHeight: 1.7, marginBottom: '16px' }}>
+          Welcome to the official digital directory of the Richmond College Old Boys' Association (RCOBA) Executive Committee members. This comprehensive platform serves as a historical and contemporary record of the dedicated alumni who have steered the association from 1976 through our upcoming 150th anniversary in 2026. Here you can explore the leadership legacy that has shaped Richmond College's development and fostered our global brotherhood.
+        </p>
+        <p style={{ color: '#475569', fontSize: '1.05rem', lineHeight: 1.7, margin: 0 }}>
+          Use the dashboard below to view statistics on past Presidents, Secretaries, Treasurers, and Committee Members. You can also search for specific individuals by name or filter by the year they served on the Exco. This directory is maintained by the RCOBA Secretariat to honor the service of our past and present leaders.
+        </p>
       </div>
       {isAdmin && (
         <div className="admin-controls animate-fade-in" style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '20px', gap: '12px' }}>
